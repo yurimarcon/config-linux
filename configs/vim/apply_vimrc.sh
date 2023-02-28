@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd ./vim
+cd ~/config-linux/configs/vim/
 
 git clone https://github.com/VundleVim/Vundle.vim.git \
     ~/.vim/bundle/Vundle.vim
@@ -15,5 +15,5 @@ vim +PluginInstall +qall
 
 echo "Configs Vim updated success"
 
-cd ..
+cd ~/config-linux/
 

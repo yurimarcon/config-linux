@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd ./i3wm
+cd ~/config-linux/configs/i3wm/
 
 sudo apt install \
     git \
@@ -21,10 +21,10 @@ sudo apt install \
     arc-theme \
     papirus-icon-theme \
     breeze-cursor-theme \
-    firmware-iwlwifi \
     rfkill \
     blueman \
-    flameshot
+    flameshot \
+    unzip
 
 
 
@@ -46,7 +46,7 @@ echo -e "####################################################\n"
 
 
 # Copiando Wallpapers para o deiretorio Images
-cp ./Wallpapers ~/Images/ -r &&
+cp ../Wallpapers ~/Images/ -r &&
 # Aplicando um wallpaper inicial
 feh --bg-fill ~/Images/Wallpapers/montain_debian.jpg
 echo -e "\n####################################################"
@@ -55,23 +55,5 @@ echo -e "####################################################\n"
 
 
 
-# Configura layout de teclado para bnt2
-sudo chmod go+w /etc/default/keyboard
-sudo cat ./keyboard > /etc/default/keyboard
-echo  "####################################################"
-echo "Configurando teclado como ABNT2..."
-echo "####################################################"
-
-
-
-# Instalando fonte do NerdFonts
-echo  "####################################################"
-echo "Configurando fonte..."
-echo "####################################################"
-sudo cp ./fonts/DroidSansMono.zip /usr/share/fonts/
-cd /usr/share/fonts/
-sudo unzip DroidSansMono.zip
-sudo rm DroidSansMono.zip
-fc-cache
-
 cd ~/config-linux
+
