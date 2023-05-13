@@ -21,3 +21,8 @@ sudo apt install \
     arc-theme \
     papirus-icon-theme \
     breeze-cursor-theme
+
+# Criação de pastas na home do usuario
+
+cd ~/
+mkdir Documents Downloads Images Videos Music Publish
