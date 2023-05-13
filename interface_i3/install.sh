@@ -3,11 +3,17 @@
 sudo apt install \
     git \
     xorg \
-    neovim \
+    i3 \
+    i3blocks \
+    xfce4-terminal \
     arandr \
     lightdm \
     lightdm-gtk-greeter \
-    pacmanfm \
-    i3 \
+    ranger \
+    pcmanfm \
     chromium \
-    neofetch
+    neofetch \
+    lxappearance \ 
+    vim \
+    nitrogen \
+    feh
