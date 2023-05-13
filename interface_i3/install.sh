@@ -16,4 +16,8 @@ sudo apt install \
     lxappearance \ 
     vim \
     nitrogen \
-    feh
+    feh \ 
+    apulse \
+    arc-theme \
+    papirus-icon-theme \
+    breeze-cursor-theme
