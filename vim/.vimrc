@@ -5,13 +5,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'git://git.wincent.com/command-t.git'
 " Plugin 'file:///home/gmarik/path/to/plugin'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
+Plugin 'arcticicestudio/nord-vim'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'rafi/awesome-vim-colorschemes'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'mhinz/vim-startify'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -39,6 +43,9 @@ set foldlevel=99
 set nowrap
 set encoding=utf8
 
+" colorscheme nord
+colorscheme murphy
+
 " Permite selecionar com SHIFT + SETA
 set selectmode=mouse,key
 set mousemodel=popup
@@ -54,7 +61,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Airline
 set laststatus=2
 
-let g:airline_theme='base16_twilight'
+let g:airline_theme='afterglow'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airlin_statusline_ontop = 0
