@@ -13,14 +13,18 @@ sudo apt install \
     pcmanfm \
     chromium \
     neofetch \
-    lxappearance \ 
+    lxappearance \
     vim \
     nitrogen \
-    feh \ 
+    feh \
     apulse \
     arc-theme \
     papirus-icon-theme \
-    breeze-cursor-theme
+    breeze-cursor-theme \
+    wifi-menu \
+    firmware-iwlwifi \
+    rfkill blueman \
+    nmcli
 
 # Criação de pastas na home do usuario
 
