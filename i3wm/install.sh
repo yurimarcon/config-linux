@@ -21,12 +21,21 @@ sudo apt install \
     arc-theme \
     papirus-icon-theme \
     breeze-cursor-theme \
-    wifi-menu \
     firmware-iwlwifi \
-    rfkill blueman \
-    nmcli
+    rfkill \
+    blueman
+
+
+
+# Copiando o arquivo de configuracoes do i3wm
+cp ~/.config/i3/config ~/.config/i3/config_bkp
+cat config > ~/.config/i3/config
+echo -e "\n####################################################"
+echo "Arquivo de configuracao do i3 copiado com sucesso!!!"
+echo -e "####################################################\n"
+
+
 
 # Criação de pastas na home do usuario
-
 cd ~/
 mkdir Documents Downloads Images Videos Music Publish

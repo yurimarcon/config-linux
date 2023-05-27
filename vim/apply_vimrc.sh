@@ -1,5 +1,8 @@
 #! /bin/bash
 
+git clone https://github.com/VundleVim/Vundle.vim.git \
+    ~/.vim/bundle/Vundle.vim
+
 cat ~/.vimrc > ~/.vimrc_bkp
 
 cat .vimrc > ~/.vimrc
