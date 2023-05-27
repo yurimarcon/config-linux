@@ -37,5 +37,11 @@ echo -e "####################################################\n"
 
 
 # Criação de pastas na home do usuario
-cd ~/
-mkdir Documents Downloads Images Videos Music Publish
+mkdir ~/Documents ~/Downloads ~/Images ~/Videos ~/Music ~/Publish
+
+
+
+# Copiando Wallpapers para o deiretorio Images
+cp ./Wallpapers ~/Images/ -r &&
+# Aplicando um wallpaper inicial
+feh --bg-fill Images/Wallpapers/montain_debian.jpg
