@@ -23,7 +23,8 @@ sudo apt install \
     breeze-cursor-theme \
     firmware-iwlwifi \
     rfkill \
-    blueman
+    blueman \
+    flameshot
 
 
 
@@ -38,6 +39,9 @@ echo -e "####################################################\n"
 
 # Criação de pastas na home do usuario
 mkdir ~/Documents ~/Downloads ~/Images ~/Videos ~/Music ~/Publish
+echo -e "\n####################################################"
+echo "Criando diretórios na raiz do usuario..."
+echo -e "####################################################\n"
 
 
 
@@ -45,3 +49,28 @@ mkdir ~/Documents ~/Downloads ~/Images ~/Videos ~/Music ~/Publish
 cp ./Wallpapers ~/Images/ -r &&
 # Aplicando um wallpaper inicial
 feh --bg-fill Images/Wallpapers/montain_debian.jpg
+echo -e "\n####################################################"
+echo "Copiando wallpapers e definindo um como default..."
+echo -e "####################################################\n"
+
+
+
+# Configura layout de teclado para bnt2
+sudo at ./keyboard > /etc/default/keyboard
+echo  "####################################################"
+echo "Configurando teclado como ABNT2..."
+echo "####################################################"
+
+
+
+# Instalando fonte do NerdFonts
+echo  "####################################################"
+echo "Configurando fonte..."
+echo "####################################################"
+sudo cp ./fonts/DroidSansMono.zip /usr/share/fonts/
+cd /usr/share/fonts/
+sudo unzip DroidSansMono.zip
+sudo rm DroidSansMono.zip
+fc-cache
+
+cd ~/config-linux

@@ -44,7 +44,7 @@ set nowrap
 set encoding=utf8
 
 " colorscheme nord
-colorscheme murphy
+colorscheme nord 
 
 " Permite selecionar com SHIFT + SETA
 set selectmode=mouse,key
