@@ -54,7 +54,8 @@ inoremap ( ()<LEFT>
 inoremap < <><LEFT>
 
 " colorscheme nord
-colorscheme nord 
+" colorscheme nord
+colorscheme murphy
 
 " Permite selecionar com SHIFT + SETA
 set selectmode=mouse,key
@@ -78,3 +79,14 @@ let g:airlin_statusline_ontop = 0
 let g:airline#extensions#tabline#left_sep = " "
 let g:airline#extensions#tabline#left_alt_sep = "|"
 let g:airline#extensions#tabline#formater = "default"
+
+" Formata e identa arquivos JSON
+function! ParseStringToJsonFormat()
+    %s/\\"/"/g
+    %s/^"//
+    %s/"$//
+    %!python -m json.tool
+endfunc
+noremap <C-J> :call ParseStringToJsonFormat() <CR>
+
+
