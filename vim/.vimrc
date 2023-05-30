@@ -42,6 +42,16 @@ set foldmethod=syntax
 set foldlevel=99
 set nowrap
 set encoding=utf8
+set spelllang=pt              " Escolhe o dicioário
+set textwidth=80              " Limita a linha em no máximo 80 caracteres
+
+filetype plugin indent on
+
+" Autocomplta a abertura e fechamento de símbolos
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap < <><LEFT>
 
 " colorscheme nord
 colorscheme nord 
