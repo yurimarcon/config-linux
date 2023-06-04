@@ -9,8 +9,6 @@ sudo apt install \
     i3blocks \
     xfce4-terminal \
     arandr \
-    lightdm \
-    lightdm-gtk-greeter \
     ranger \
     pcmanfm \
     chromium \
