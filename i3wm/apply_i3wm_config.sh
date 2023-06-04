@@ -1,5 +1,7 @@
 #! /bin/bash
 
+cd ./i3wm
+
 sudo apt install \
     git \
     xorg \
@@ -29,7 +31,7 @@ sudo apt install \
 
 
 # Copiando o arquivo de configuracoes do i3wm
-cp ~/.config/i3/config ~/.config/i3/config_bkp
+cp ~/.config/i3/config ~/.config/i3/config.old
 cat config > ~/.config/i3/config
 echo -e "\n####################################################"
 echo "Arquivo de configuracao do i3 copiado com sucesso!!!"
@@ -73,4 +75,4 @@ sudo unzip DroidSansMono.zip
 sudo rm DroidSansMono.zip
 fc-cache
 
-cd ~/config-linux
+cd ..

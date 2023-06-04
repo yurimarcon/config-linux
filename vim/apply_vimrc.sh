@@ -1,5 +1,7 @@
 #! /bin/bash
 
+cd ./vim
+
 git clone https://github.com/VundleVim/Vundle.vim.git \
     ~/.vim/bundle/Vundle.vim
 
@@ -12,3 +14,6 @@ source ~/.vimrc
 vim +PluginInstall +qall
 
 echo "Configs Vim updated success"
+
+cd ..
+

@@ -44,6 +44,7 @@ set nowrap
 set encoding=utf8
 set spelllang=pt              " Escolhe o dicioário
 set textwidth=80              " Limita a linha em no máximo 80 caracteres
+set colorcolumn=80            " Cria uma linha apontando o limite de 80 caracteres
 
 filetype plugin indent on
 
@@ -68,6 +69,10 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 " nnoremap <leader>n :NERDTreeFocus<CR>
 " nnoremap <C-n> :NERDTree<CR>
+
+" Abas (buffers)
+noremap <S-H> :bp <CR>
+noremap <S-L> :bn <CR>
 
 " Airline
 set laststatus=2
