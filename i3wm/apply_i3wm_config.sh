@@ -48,7 +48,7 @@ echo -e "####################################################\n"
 # Copiando Wallpapers para o deiretorio Images
 cp ./Wallpapers ~/Images/ -r &&
 # Aplicando um wallpaper inicial
-feh --bg-fill Images/Wallpapers/montain_debian.jpg
+feh --bg-fill ~/Images/Wallpapers/montain_debian.jpg
 echo -e "\n####################################################"
 echo "Copiando wallpapers e definindo um como default..."
 echo -e "####################################################\n"
@@ -56,7 +56,8 @@ echo -e "####################################################\n"
 
 
 # Configura layout de teclado para bnt2
-sudo at ./keyboard > /etc/default/keyboard
+sudo chmod go+w /etc/default/keyboard
+sudo cat ./keyboard > /etc/default/keyboard
 echo  "####################################################"
 echo "Configurando teclado como ABNT2..."
 echo "####################################################"
@@ -73,4 +74,4 @@ sudo unzip DroidSansMono.zip
 sudo rm DroidSansMono.zip
 fc-cache
 
-cd ..
+cd ~/config-linux

@@ -2,9 +2,9 @@
 
 # Consult the keyboard(5) manual page.
 
-XKBMODEL="abnt2"
+XKBMODEL="pc105"
 XKBLAYOUT="br"
 XKBVARIANT=""
-XKBOPTIONS="lv3:alt_switch,compose:rctrl"
+XKBOPTIONS=""
 
 BACKSPACE="guess"
