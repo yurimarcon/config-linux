@@ -163,6 +163,9 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# Keybindings
+bindsym Print exec flameshot gui
+
 for_window [class="^.*"] border pixel 3 
 # graps inner 15
 # graps outer 15
