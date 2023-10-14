@@ -95,3 +95,15 @@ Root:
 ```sh
 \[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w #\[\033[00m\]
 ```
+
+---
+
+## Problemas comuns 
+
+### Sistema somente leitura
+provavelmente nao foi criado o arquivo fstab, use o programa genfstab para gerar.
+
+Você pode testar o sistema ajustando pela tela do grub, masta apertar "e" no momento de selecionar o boot e
+onde estiver "ro quiet" altere para "rw quiet", isso vai permitir vc usar o sistema, mas para funcionar ao reiniciar
+você precisa alterar o arquivo /etc/default/grub e trocar onde estiver "quiet" por "quiet rw".
+Mas você não terá esse problema se gerar o fstab.
