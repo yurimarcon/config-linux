@@ -107,3 +107,10 @@ Você pode testar o sistema ajustando pela tela do grub, masta apertar "e" no mo
 onde estiver "ro quiet" altere para "rw quiet", isso vai permitir vc usar o sistema, mas para funcionar ao reiniciar
 você precisa alterar o arquivo /etc/default/grub e trocar onde estiver "quiet" por "quiet rw".
 Mas você não terá esse problema se gerar o fstab.
+
+---
+
+## Links úteis
+
+Plataforme de vídeos em código livre, alternativa ao YouTube:
+https://invidious.slackjeff.com.br/feed/popular
