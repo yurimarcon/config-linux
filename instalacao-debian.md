@@ -86,15 +86,22 @@ genfstab -U /mnt > /mnt/etc/fstab
 
 ## Variável  PS1
 
-Default:
+Coloque essa linha no arquivo .bashrc do su usuário:
 ```sh
-\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$
+PS1='\[\e[1;31m\]\342\224\214\342\224\200\[\e[1;31m\][\[\e[1;34m\]\u\[\e[1;37m\]@\[\e[1;1;34m\]\h\[\e[1;31m\]]\[\e[1;31m\]\342\224\200\[\e[1;31m\][\[\e[1;34m\]\w\[\e[1;31m\]]\[\e[1;31m\]\342\224\200[\[\e[1;37m\]\t\[\e[1;31m\]]\n\[\e[1;31m\]\342\224\224\342\224\200\342\224\200\342\225\274\[\e[1;37m\] \$ \[\e[0m\]'
 ```
 
-Root:
+Coloque a seguinte linha dentro do arquivo .bashrc em /home/root:
 ```sh
-\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w #\[\033[00m\]
+PS1='\[\e[1;34m\]\342\224\214\342\224\200\[\e[1;34m\][\[\e[31m\]\u\[\e[1;37m\]@\[\e[1;34m\]\h\[\e[1;34m\]]\[\e[1;34m\]\342\224\200\[\e[1;34m\][\[\e[31m\]\w\[\e[1;34m\]]\[\e[1;34m\]\342\224\200[\[\e[1;37m\]\t\[\e[1;34m\]]\n\[\e[1;34m\]\342\224\224\342\224\200\342\224\200\342\225\274\[\e[1;37m\] \$ \[\e[0m\]'
 ```
+
+Para consultar mais tipos de personalização da variável PS1 basta conferir esse
+vídeo do Kretcheu:
+https://www.youtube.com/watch?v=oWJqca3D4YE
+
+O arquivo que ele se refere atualmente (18-02-2024) está sob a URL:
+https://salsa.debian.org/kretcheu/devel/-/raw/master/prompt
 
 ---
 
