@@ -1,6 +1,16 @@
 # Infos
 
-###Como jagar Tron.
+## Instruções para instalação
+
+### Preparar o ambiente
+
+Para preparar o ambiente rode o arquivo install.sh.
+
+### Instalação do debian
+
+Para instalar o Debian o passo a passo está no aquivo instalação-debian.sh.
+
+### Como jagar Tron.
 Basta todar no terminal o seguinte comando:
 
 ```sh
