@@ -115,6 +115,33 @@ onde estiver "ro quiet" altere para "rw quiet", isso vai permitir vc usar o sist
 você precisa alterar o arquivo /etc/default/grub e trocar onde estiver "quiet" por "quiet rw".
 Mas você não terá esse problema se gerar o fstab.
 
+### Problema após atualização de Kernel
+
+Ao atualizar o Kernel já tive problemas ao rebootar o sistema. Não subia
+ambiente nem nas versões mais antigas de Kernel. Eu tentei subir o sistema pelo
+miniterminal do grub mas mesmo direcioando o kernel corretamente a maquina
+reiniciava e voltava para o mesmo erro.
+"1x10452 out of range ponter."
+
+A solução foi usando outro sistema Debian fazer um chroot no hd que não subia o
+sistema e então rodar os segiuntes comandos:
+
+```sh
+grub-install /dev/sdb
+
+update-grub
+```
+
+após isso instalar o arch-install-scripts e rodar:
+
+```sh
+genfstab -U / > /etc/fstab
+```
+
+Após esses procedimentos, bastou colocar o hd no local novamente e o sistema
+voltou ao normal.
+
+
 ---
 
 ## Links úteis
