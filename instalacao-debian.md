@@ -17,6 +17,14 @@ sudo mkfs.ext4 /dev/sdc2
 
 ## Fazer a instalaçao do Debian com debootstrap
 
+Monte a partição do sistema no ambiente, por exemplo nesse nosso caso iremos
+montar com o seguinte comando:
+```sh
+sudo mount /dev/sdc2 /mnt
+```
+
+Após isso rode o seguinte comando:
+
 ```sh
 sudo debootstrap stable /mnt/ http://deb.debian.org/debian
 ```
@@ -68,7 +76,24 @@ grub-install /dev/sdc
 update-grub
 ```
 
+### Aqui está uma observação caso o boot seja UEFI
+
+disco:
+    - p1: boot 1M
+    - p2: UEFI 50M
+    - p3: root 3.9G
+
+Agora vamos instalar o glub UEFI, mas antes precisamos criar uma pasta dentro do
+diretório /boot
+
+```sh
+mkdir /boot/efi
+mount /dev/loop10p2 /boot/efi
+apt install grub-efi-amd64
+```
+
 ## Alterar a senha do root
+
 
 passwd
 
