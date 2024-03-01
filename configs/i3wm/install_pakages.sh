@@ -31,8 +31,9 @@ sudo apt install \
 # Copiando o arquivo de configuracoes do i3wm
 cp ~/.config/i3/config ~/.config/i3/config.old
 cat config > ~/.config/i3/config
+cp -r ~/config-linux/configs/i3blocks ~/.config/
 echo -e "\n####################################################"
-echo "Arquivo de configuracao do i3 copiado com sucesso!!!"
+echo "Arquivo de configuracao do i3 e i3blocks copiado com sucesso!!!"
 echo -e "####################################################\n"
 
 
