@@ -173,3 +173,7 @@ voltou ao normal.
 
 Plataforme de vídeos em código livre, alternativa ao YouTube:
 https://invidious.slackjeff.com.br/feed/popular
+
+## Estilização do i3wm
+
+https://kumarcode.com/Colorful-i3/
