@@ -177,3 +177,7 @@ https://invidious.slackjeff.com.br/feed/popular
 ## Estilização do i3wm
 
 https://kumarcode.com/Colorful-i3/
+
+## I3-gaps-deb
+
+https://github.com/maestrogerardo/i3-gaps-deb?tab=readme-ov-file
