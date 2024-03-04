@@ -15,6 +15,7 @@ sudo apt install \
     neofetch \
     lxappearance \
     vim \
+    vim-gtk3 \
     nitrogen \
     feh \
     apulse \
