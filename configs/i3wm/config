@@ -167,8 +167,8 @@ bindsym $mod+r mode "resize"
 bindsym Print exec flameshot gui
 
 for_window [class="^.*"] border pixel 3 
-# graps inner 15
-# graps outer 15
+gaps inner 10
+gaps outer 10
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
