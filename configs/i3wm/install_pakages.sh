@@ -25,7 +25,14 @@ sudo apt install \
     rfkill \
     blueman \
     flameshot \
-    unzip
+    unzip \
+    lightdm
+
+sudo systemctl lightdm.enable
+sudo systemctl lightdm.start
+echo -e "\n####################################################"
+echo "Habilitando o lightdm para iniciar ao iniciar o sistema"
+echo -e "####################################################\n"
 
 
 
