@@ -26,6 +26,7 @@ sudo apt install \
     blueman \
     flameshot \
     unzip \
+    rofi \
     lightdm
 
 sudo systemctl lightdm.enable
