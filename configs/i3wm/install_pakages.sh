@@ -29,8 +29,9 @@ sudo apt install \
     rofi \
     lightdm
 
-sudo systemctl lightdm.enable
-sudo systemctl lightdm.start
+
+
+sudo systemctl set-default graphical.target
 echo -e "\n####################################################"
 echo "Habilitando o lightdm para iniciar ao iniciar o sistema"
 echo -e "####################################################\n"
