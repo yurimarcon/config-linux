@@ -181,3 +181,16 @@ https://kumarcode.com/Colorful-i3/
 ## I3-gaps-deb
 
 https://github.com/maestrogerardo/i3-gaps-deb?tab=readme-ov-file
+
+## Desabilitando teclas especificas
+
+# desabilitando teclas que não funcionam
+# primeiro para descobri pode usar o programa 'xev'
+# esse programa vai começar a ler as entradas 
+# após descobrir qual o code da tecla defeituosa 
+# basta rodar o seguinte comando:
+# (aqui no nosso caso esse coando vai rodar ao logar no user yuri)
+
+xmodemap -e 'keymap 70='
+xmodemap -e 'keymap 76='
+
