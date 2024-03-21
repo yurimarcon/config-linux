@@ -194,3 +194,6 @@ https://github.com/maestrogerardo/i3-gaps-deb?tab=readme-ov-file
 xmodemap -e 'keymap 70='
 xmodemap -e 'keymap 76='
 
+## Gerenciador de saida de audio
+
+sudo apt install pavucontrol
