@@ -76,3 +76,10 @@ partição.
 
 Pronto, agora pode gravar informações no seu pendrive que será acessível por
 qualquer dispositivo.
+ 
+### Arrumando a data
+
+```sh
+sudo date -s mm/dd/yyyy
+```
+
