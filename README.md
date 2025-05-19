@@ -26,7 +26,7 @@ Sua cor estará no topo da janela.
 Plugue o dispositivo de armazenamento na maquina e rode o comando:
 
 ```sh
-lsbk
+lsblk
 ```
 
 Encontre a unidade que você está querendo formatar.
